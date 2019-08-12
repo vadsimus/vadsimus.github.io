@@ -1,0 +1,45 @@
+body {
+    
+}
+.wrap{
+    font-size: 25px;
+    display:flex;
+}
+h1{
+    margin-left: 30px;
+}
+.radios{
+/*    display: flex;*/
+}
+.zero_block,
+.one_block {
+    display: flex;
+}
+
+#zeroP,
+#oneP {
+    margin-left: 50px;
+}
+
+
+.many{
+    margin-left: 20px;
+    width: 400px;
+    background-color: green;
+    color: aliceblue;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.input{margin-left: 20px;
+    padding-top: 20px;
+
+    
+
+}
+ #run {
+    height: 25px;
+     width: 100%;
+}
+#canvas{
+    margin-left: 20px;
+}

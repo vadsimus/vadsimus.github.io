@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+ <h1>Наглядное представление отличий разных генераторов псевдослучайных чисел</h1>
+  
+<div class="wrap">
+    
+    <div class="input">
+    
+    <div class="radios">
+    <div class="radioCnvSize">
+       <input type="radio" name='cnvSize' checked>250x250 (62.5k)<br>
+        <input type="radio" name='cnvSize'>250x350 (87.5k) <br>
+         <input type="radio" name='cnvSize'>350x350 (122.5k)<br>
+          <input type="radio" name='cnvSize'>500x500 (500k) <br>
+           <input type="radio" name='cnvSize'>1000x1000 (1M) <br><br>
+    </div>
+<!--    <input value="62500" id='count'>-->
+  
+    <div class="radioTypeRnd">
+       <input type="radio" name='sel' id = "math" checked>Math.random<br>
+        <input type="radio" name='sel' id = "sec">Crypto<br>
+         <input type="radio" name='sel' id = "Conguent">Conguent<br>
+          <input type="radio" name='sel' id = "bad">BadRandom
+    </div>
+     </div>
+      <input autofocus id = "run" type="button" value="Run" onclick="buttonClick()">
+    </div>
+         <canvas height="500" width="500" id="canvas"></canvas>
+    <div class="many">
+        Результаты: <br>кол-во раз подряд
+
+        <div id='many1'></div>
+        <div id='many2'></div>
+        <div id='many3'></div>
+        <div id='many4'></div>
+        <div id='many5'></div>
+        <div id='many6'></div>
+        <div id='many7'></div>
+        <div id='many8'></div>
+        <div id='many9'></div>
+        <div id='many10'></div>
+        <div id='more'></div>
+        <div id='max'></div>
+        <div class="zero_block">
+            <div>0 = </div>
+            <div id="zero">0</div>
+            <div id=zeroP></div>
+        </div>
+        <div class="one_block">
+            <div>1 = </div>
+            <div id="one">0</div>
+            <div id=oneP></div>
+        </div>
+    </div>
+
+
+</div>
+<a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Math.random</a> <br>
+<a href="https://developer.mozilla.org/ru/docs/Web/API/RandomSource/getRandomValues">Crypto</a> <br>
+<a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D0%B3%D1%80%D1%83%D1%8D%D0%BD%D1%82%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4">Conguent   (random[n] = (25173 * random[n-1] + 13849) % 65536)</a> <br>
+<a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D0%B3%D1%80%D1%83%D1%8D%D0%BD%D1%82%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4">BadRandom - Conguent with bad parametrs/  Brandom[n] = (7 * Brandom[n-1] + 7) % 6597;</a>
+
+
+
+
+</body>
+
+</html>
