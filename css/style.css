@@ -25,25 +25,9 @@ body {
     background-size: cover;
 
     color: white;
-    /*    font-size: 30px;*/
-
-
-
-
-
-
 }
 
 .first h1 {
-    /*
-    text-align: center;
-    padding-top: 45vh;
-*/
-
-
-
-    /*    box-sizing: border-box;*/
-/*    min-height: 100vh;*/
     text-align: center;
     padding-top: 30vh;
     width: 100vw;
@@ -59,14 +43,24 @@ body {
     height: 100vh;
     background-color: white;
 }
+.second h4{
+    margin-top: 30px;
+}
+.second ul{
+    padding-left: 40px;
+}
 
 .third {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-color: gray;
+}
+.third > *{
+    padding: 40px;
 }
 .third a{
     font-size: 40px;
+    color: white;
 }
 
 .second img {
