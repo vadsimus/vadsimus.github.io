@@ -9,20 +9,25 @@ html {
     padding: 0;
 }
 
+/*
 body {
     margin: 0;
     padding: 0;
 }
+*/
 
 .first {
+/*
     margin: 0;
     padding: 0;
+*/
     background-color: gray;
     width: 100%;
     height: 100vh;
     background-image: url(../img/99736.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
 
     color: white;
 }
@@ -38,17 +43,37 @@ body {
 }
 
 .second {
-    padding: 40px;
     width: 100%;
     height: 100vh;
     background-color: white;
 }
+
+.second img{
+    padding: px;
+}
+
 .second h4{
     margin-top: 30px;
 }
 .second ul{
     padding-left: 40px;
 }
+
+
+.second img {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 28%;
+    float: left;
+}
+
+.about {
+    padding-top: 5%;
+    font-size: 25px;
+    float: left;
+    width: 70%;
+}
+
 
 .third {
     width: 100%;
@@ -63,16 +88,8 @@ body {
     color: white;
 }
 
-.second img {
-    width: 30%;
-    float: left;
-}
 
-.about {
-    font-size: 25px;
-    float: left;
-    width: 70%;
-}
+
 
 .aboutCont {
     margin-left: 5vh;
@@ -82,15 +99,19 @@ body {
 @media screen and (max-width:700px) {
     .second {
         padding: 0px;
+        height: auto;
         
     }
     .second img {
-    width: 100%;
-    float: none;
-}
+        padding: inherit;
+        margin: inherit;
+        width: 100%;
+        float: none;
+    }
     .about {
     font-size: 25px;
     width: 70%;
          float: none;
+    }
 }
-}
+
