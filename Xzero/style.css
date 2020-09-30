@@ -10,15 +10,9 @@
 }
 
 .wrapper div{
-/*    background-color: aqua;*/
-    border: solid;
+    color: white;
+    border: 3px solid black;
     background-image: None;
-    background-size:contain;
+    background-size:100% 100%;
     background-repeat: no-repeat;
-    
-    
-    
-/*    https://st.depositphotos.com/1005844/2751/v/950/depositphotos_27510259-stock-illustration-grunge-x.jpg*/
-/*    https://st.depositphotos.com/1005844/2771/i/950/depositphotos_27712141-stock-photo-painted-red-circle.jpg*/
-    
 }
