@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => { 
 
     document.getElementById("create_field_btn").addEventListener('click', ()=>{
-        
-        let x = document.getElementById('input_1').value
-        let y = document.getElementById('input_2').value
+        document.getElementById('create_field_btn').setAttribute('disabled', true)
+        let x_input = document.getElementById('input_1')
+        let y_input = document.getElementById('input_2')
+        x_input.setAttribute('disabled', true)
+        y_input.setAttribute('disabled', true)
+        let x = x_input.value
+        let y = y_input.value
 
         let game_field = document.getElementById('game')
         
@@ -22,6 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
             game_field.appendChild(line)
         }   
     })
+
+    var reset = document.getElementById("clear_btn");
+    reset.addEventListener("click", function () { //Все сначала
+        location.reload();
+    });
 
 }
 )

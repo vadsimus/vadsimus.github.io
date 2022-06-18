@@ -55,42 +55,29 @@ body {
     transform: translate3d(-5px, -5px, -5px);
 }
 
-.shirt,
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    backface-visibility: hidden;
-}
 
-.back {
-    transform: rotateY(180deg);
-}
 #game_zone {
-    display: inline-block;
-    margin: auto;
-    background-color:
+    /* display: inline-block; */
+    /* margin: auto; */
+    /* background-color: */
 }
 
 #control {
-    display: flex;
+    width: 100%;
+    height: 150px;
+    /* display: flex; */
 }
 
 #control > div {
+
     margin: auto;
 }
-#btn>button, #reset {
+#btn>button {
     width: 200px;
     height: 30px;
 }
 
-#btn,
-#counter {
+#btn{
     width: 200px;
 }
 
