@@ -23,7 +23,7 @@ body {
 }
 
 #game {
-    padding-top: 10px;
+    margin: 30px;
     width: auto;
     margin: auto;
     white-space: nowrap;
@@ -64,7 +64,7 @@ body {
 
 #control {
     width: 100%;
-    height: 150px;
+    height: 200px;
     /* display: flex; */
 }
 
