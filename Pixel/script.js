@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => { 
 
-    is_mouse_down = false;
+    let cell_count = 0
     function mouseEnter(e){
-        console.log(is_mouse_down)
-        if (is_mouse_down) {
-            e.target.classList.toggle('red')
+
+        e.target.classList.toggle('red')
+        all_cells = document.getElementsByClassName('red')
+        if (all_cells.length >= cell_count){
+            alert('!!!!')
         }
+        // }
     }
 
 
@@ -22,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         size_input.setAttribute('disabled', true)
         let x = x_input.value
         let y = y_input.value
+        cell_count = Number(x) * Number(y)
         let size = size_input.value
 
         let game_field = document.getElementById('game')
@@ -34,13 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 pixel = document.createElement('div')
                 pixel.style.width = size + "px"
                 pixel.style.height = size + "px"
-                pixel.addEventListener('mousedown', (e)=>{
-                    is_mouse_down=true
-                    e.target.classList.toggle('red')
-                })
-                pixel.addEventListener('mouseup', (e)=>{
-                    is_mouse_down=false
-                })
+                if (Math.random() < 0.3){
+                    pixel.className = 'red'
+                }
+                // pixel.addEventListener('mousedown', (e)=>{
+                //     is_mouse_down=true
+                //     e.target.classList.toggle('red')
+                // })
+                // pixel.addEventListener('mouseup', (e)=>{
+                //     is_mouse_down=false
+                // })
 
 
                 pixel.addEventListener('mouseenter', mouseEnter)
